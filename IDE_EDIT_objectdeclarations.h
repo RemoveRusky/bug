@@ -119,7 +119,11 @@ namespace enigma // TODO: Replace with enigma_user
       depth.remove();;
     }
 
+<<<<<<< HEAD
     OBJ_obj_0(int enigma_genericconstructor_newinst_x = 0, int enigma_genericconstructor_newinst_y = 0, const int id = (enigma::maxid++), const int enigma_genericobjid = 60, bool handle = true): object_locals(id,enigma_genericobjid) 
+=======
+    OBJ_obj_0(int enigma_genericconstructor_newinst_x = 0, int enigma_genericconstructor_newinst_y = 0, const int id = (enigma::maxid++), const int enigma_genericobjid = 0, bool handle = true): object_locals(id,enigma_genericobjid) 
+>>>>>>> 32c0bb8... working
     {
       if (!handle) return;
       sprite_index = enigma::objectdata[60]->sprite;
@@ -216,7 +220,11 @@ namespace enigma // TODO: Replace with enigma_user
       depth.remove();;
     }
 
+<<<<<<< HEAD
     OBJ_obj_1(int enigma_genericconstructor_newinst_x = 0, int enigma_genericconstructor_newinst_y = 0, const int id = (enigma::maxid++), const int enigma_genericobjid = 61, bool handle = true): object_locals(id,enigma_genericobjid) 
+=======
+    OBJ_obj_1(int enigma_genericconstructor_newinst_x = 0, int enigma_genericconstructor_newinst_y = 0, const int id = (enigma::maxid++), const int enigma_genericobjid = 1, bool handle = true): object_locals(id,enigma_genericobjid) 
+>>>>>>> 32c0bb8... working
     {
       if (!handle) return;
       sprite_index = enigma::objectdata[61]->sprite;

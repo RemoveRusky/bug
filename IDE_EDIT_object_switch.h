@@ -32,10 +32,17 @@
 #  define NEW_OBJ_PREFIX
 #endif
 
+<<<<<<< HEAD
 case 60:
     NEW_OBJ_PREFIX new enigma::OBJ_obj_0(x,y,idn);
   break;
 case 61:
+=======
+case 0:
+    NEW_OBJ_PREFIX new enigma::OBJ_obj_0(x,y,idn);
+  break;
+case 1:
+>>>>>>> 32c0bb8... working
     NEW_OBJ_PREFIX new enigma::OBJ_obj_1(x,y,idn);
   break;
 

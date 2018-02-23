@@ -65,7 +65,7 @@ namespace enigma
 namespace enigma // TODO: Replace with enigma_user
 {
   
-  struct OBJ_obj_0: object_locals
+  struct OBJ_obj_60: object_locals
   {
     // Local variables
     var o;
@@ -89,7 +89,7 @@ namespace enigma // TODO: Replace with enigma_user
 
     // Self-tracking
       enigma::pinstance_list_iterator ENOBJ_ITER_me;
-      enigma::inst_iter *ENOBJ_ITER_myobj60;
+      enigma::inst_iter *ENOBJ_ITER_myobj0;
       enigma::inst_iter *ENOBJ_ITER_myevent_step;
       enigma::inst_iter *ENOBJ_ITER_myevent_beginstep;
       enigma::inst_iter *ENOBJ_ITER_myevent_localsweep;
@@ -109,7 +109,7 @@ namespace enigma // TODO: Replace with enigma_user
     void deactivate()
     {
       enigma::unlink_main(ENOBJ_ITER_me); // Remove this instance from the non-redundant, tree-structured list.
-      unlink_object_id_iter(ENOBJ_ITER_myobj60, 60);
+      unlink_object_id_iter(ENOBJ_ITER_myobj0, 0);
       enigma::event_step->unlink(ENOBJ_ITER_myevent_step);
       enigma::event_beginstep->unlink(ENOBJ_ITER_myevent_beginstep);
       enigma::event_localsweep->unlink(ENOBJ_ITER_myevent_localsweep);
@@ -119,14 +119,14 @@ namespace enigma // TODO: Replace with enigma_user
       depth.remove();;
     }
 
-    OBJ_obj_0(int enigma_genericconstructor_newinst_x = 0, int enigma_genericconstructor_newinst_y = 0, const int id = (enigma::maxid++), const int enigma_genericobjid = 60, bool handle = true): object_locals(id,enigma_genericobjid) 
+    OBJ_obj_60(int enigma_genericconstructor_newinst_x = 0, int enigma_genericconstructor_newinst_y = 0, const int id = (enigma::maxid++), const int enigma_genericobjid = 0, bool handle = true): object_locals(id,enigma_genericobjid) 
     {
       if (!handle) return;
-      sprite_index = enigma::objectdata[60]->sprite;
-      mask_index = enigma::objectdata[60]->mask;
-      visible = enigma::objectdata[60]->visible;
-      solid = enigma::objectdata[60]->solid;
-      persistent = enigma::objectdata[60]->persistent;
+      sprite_index = enigma::objectdata[0]->sprite;
+      mask_index = enigma::objectdata[0]->mask;
+      visible = enigma::objectdata[0]->visible;
+      solid = enigma::objectdata[0]->solid;
+      persistent = enigma::objectdata[0]->persistent;
       activate();
       x = enigma_genericconstructor_newinst_x, y = enigma_genericconstructor_newinst_y;
       enigma::constructor(this);
@@ -134,9 +134,9 @@ namespace enigma // TODO: Replace with enigma_user
 
     void activate()
     {
-      depth.init(enigma::objectdata[60]->depth, this);
+      depth.init(enigma::objectdata[0]->depth, this);
       ENOBJ_ITER_me = enigma::link_instance(this);
-      ENOBJ_ITER_myobj60 = enigma::link_obj_instance(this, 60);
+      ENOBJ_ITER_myobj0 = enigma::link_obj_instance(this, 0);
       ENOBJ_ITER_myevent_step = enigma::event_step->add_inst(this);
       ENOBJ_ITER_myevent_beginstep = enigma::event_beginstep->add_inst(this);
       ENOBJ_ITER_myevent_localsweep = enigma::event_localsweep->add_inst(this);
@@ -145,11 +145,11 @@ namespace enigma // TODO: Replace with enigma_user
       ENOBJ_ITER_myevent_particlesystemsupdate = enigma::event_particlesystemsupdate->add_inst(this);
     }
     
-    ~OBJ_obj_0()
+    ~OBJ_obj_60()
     {
       delete vmap;
       enigma::winstance_list_iterator_delete(ENOBJ_ITER_me);
-      delete ENOBJ_ITER_myobj60;
+      delete ENOBJ_ITER_myobj0;
       delete ENOBJ_ITER_myevent_step;
       delete ENOBJ_ITER_myevent_beginstep;
       delete ENOBJ_ITER_myevent_localsweep;
@@ -160,10 +160,9 @@ namespace enigma // TODO: Replace with enigma_user
     virtual bool can_cast(int obj) const;
   };
   
-  struct OBJ_obj_1: object_locals
+  struct OBJ_obj_61: object_locals
   {
     // Local variables
-    int o;
     
     //Scripts called by this object
     
@@ -184,7 +183,7 @@ namespace enigma // TODO: Replace with enigma_user
 
     // Self-tracking
       enigma::pinstance_list_iterator ENOBJ_ITER_me;
-      enigma::inst_iter *ENOBJ_ITER_myobj61;
+      enigma::inst_iter *ENOBJ_ITER_myobj1;
       enigma::inst_iter *ENOBJ_ITER_myevent_create;
       enigma::inst_iter *ENOBJ_ITER_myevent_beginstep;
       enigma::inst_iter *ENOBJ_ITER_myevent_step;
@@ -205,7 +204,7 @@ namespace enigma // TODO: Replace with enigma_user
     void deactivate()
     {
       enigma::unlink_main(ENOBJ_ITER_me); // Remove this instance from the non-redundant, tree-structured list.
-      unlink_object_id_iter(ENOBJ_ITER_myobj61, 61);
+      unlink_object_id_iter(ENOBJ_ITER_myobj1, 1);
       enigma::event_create->unlink(ENOBJ_ITER_myevent_create);
       enigma::event_beginstep->unlink(ENOBJ_ITER_myevent_beginstep);
       enigma::event_step->unlink(ENOBJ_ITER_myevent_step);
@@ -216,14 +215,14 @@ namespace enigma // TODO: Replace with enigma_user
       depth.remove();;
     }
 
-    OBJ_obj_1(int enigma_genericconstructor_newinst_x = 0, int enigma_genericconstructor_newinst_y = 0, const int id = (enigma::maxid++), const int enigma_genericobjid = 61, bool handle = true): object_locals(id,enigma_genericobjid) 
+    OBJ_obj_61(int enigma_genericconstructor_newinst_x = 0, int enigma_genericconstructor_newinst_y = 0, const int id = (enigma::maxid++), const int enigma_genericobjid = 1, bool handle = true): object_locals(id,enigma_genericobjid) 
     {
       if (!handle) return;
-      sprite_index = enigma::objectdata[61]->sprite;
-      mask_index = enigma::objectdata[61]->mask;
-      visible = enigma::objectdata[61]->visible;
-      solid = enigma::objectdata[61]->solid;
-      persistent = enigma::objectdata[61]->persistent;
+      sprite_index = enigma::objectdata[1]->sprite;
+      mask_index = enigma::objectdata[1]->mask;
+      visible = enigma::objectdata[1]->visible;
+      solid = enigma::objectdata[1]->solid;
+      persistent = enigma::objectdata[1]->persistent;
       activate();
       x = enigma_genericconstructor_newinst_x, y = enigma_genericconstructor_newinst_y;
       enigma::constructor(this);
@@ -231,9 +230,9 @@ namespace enigma // TODO: Replace with enigma_user
 
     void activate()
     {
-      depth.init(enigma::objectdata[61]->depth, this);
+      depth.init(enigma::objectdata[1]->depth, this);
       ENOBJ_ITER_me = enigma::link_instance(this);
-      ENOBJ_ITER_myobj61 = enigma::link_obj_instance(this, 61);
+      ENOBJ_ITER_myobj1 = enigma::link_obj_instance(this, 1);
       ENOBJ_ITER_myevent_create = enigma::event_create->add_inst(this);
       ENOBJ_ITER_myevent_beginstep = enigma::event_beginstep->add_inst(this);
       ENOBJ_ITER_myevent_step = enigma::event_step->add_inst(this);
@@ -243,11 +242,11 @@ namespace enigma // TODO: Replace with enigma_user
       ENOBJ_ITER_myevent_particlesystemsupdate = enigma::event_particlesystemsupdate->add_inst(this);
     }
     
-    ~OBJ_obj_1()
+    ~OBJ_obj_61()
     {
       delete vmap;
       enigma::winstance_list_iterator_delete(ENOBJ_ITER_me);
-      delete ENOBJ_ITER_myobj61;
+      delete ENOBJ_ITER_myobj1;
       delete ENOBJ_ITER_myevent_create;
       delete ENOBJ_ITER_myevent_beginstep;
       delete ENOBJ_ITER_myevent_step;
@@ -262,9 +261,9 @@ namespace enigma // TODO: Replace with enigma_user
 
 namespace enigma {
   objectstruct objs[] = {
-    {-1,0,1,0.000000,0,-1,-100,60},
-    {-1,0,1,0.000000,0,-1,-100,61},
+    {-1,0,1,0.000000,0,-1,-100,0},
+    {-1,0,1,0.000000,0,-1,-100,1},
   };
   int objectcount = 2;
-  int obj_idmax = 62;
+  int obj_idmax = 2;
 }

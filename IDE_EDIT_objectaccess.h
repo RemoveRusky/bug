@@ -48,16 +48,16 @@ namespace enigma
       return ((*vmap)->find(str))->second;
   }
 
-  int dummy_0; // Referenced by 1 accessors
-  int  &varaccess_o(int x)
+  var dummy_0; // Referenced by 1 accessors
+  var  &varaccess_o(int x)
   {
     object_basic *inst = fetch_instance_by_int(x);
     if (inst) switch (inst->object_index)
     {
-      case obj_1: return ((OBJ_obj_1*)inst)->o;
+      case obj_60: return ((OBJ_obj_60*)inst)->o;
       case global: return ((ENIGMA_global_structure*)ENIGMA_global_instance)->o;
+      default: return map_var(&(((enigma::object_locals*)inst)->vmap), "o");
     }
-    dummy_0 = var();
     return dummy_0;
   }
 } // namespace enigma

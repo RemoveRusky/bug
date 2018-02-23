@@ -38,7 +38,7 @@ namespace enigma_user {
 namespace enigma_user {
 }
 //Default variable type: "undefined" or "real"
-const int variant::default_type = ty_real;
+const int variant::default_type = ty_undefined;
 
 namespace enigma {
   bool interpolate_textures = 0;
@@ -49,14 +49,24 @@ namespace enigma {
   bool freezeOnLoseFocus = 0;
   bool treatCloseAsEscape = -1;
   bool isFullScreen = 0;
+<<<<<<< HEAD
+<<<<<<< HEAD
   string gameInfoText = "{\\rtf1\\ansi\n{\\fonttbl\\f0\\fnil Monospaced;\\f1\\fnil DejaVu Sans;}\n\n\\li0\\ri0\\fi0\\ql\\f0\\fs24\\i0\\b0\\ul0\\sl-240\\cf0\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\f1\\fs32\\par\n\\par\n\\par\n\\fs24\\par\n\\fs32\\par\n\\fs24\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\sl0\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\fs24\\i0\\b0\\ul0\\sl0\\par\n}\n";
   string gameInfoCaption = "Game Information";
+=======
+  string gameInfoText = "{\\rtf1\\ansi\n{\\fonttbl\\f0\\fnil Monospaced;\\f1\\fnil DejaVu Sans;}\n\n\\li0\\ri0\\fi0\\ql\\f0\\fs24\\i0\\b0\\ul0\\sl-240\\cf0\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\f1\\fs32\\par\n\\par\n\\par\n\\fs24\\par\n\\fs32\\par\n\\fs24\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\sl0\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\fs24\\i0\\b0\\ul0\\sl0\\par\n}\n";
+  string gameInfoCaption = "";
+>>>>>>> 32c0bb8... working
+=======
+  string gameInfoText = "{\\rtf1\\ansi\n{\\fonttbl\\f0\\fnil Monospaced;\\f1\\fnil DejaVu Sans;}\n\n\\li0\\ri0\\fi0\\ql\\f0\\fs24\\i0\\b0\\ul0\\sl-240\\cf0\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\f1\\fs32\\par\n\\par\n\\par\n\\fs24\\par\n\\fs32\\par\n\\fs24\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\sl0\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\fs24\\i0\\b0\\ul0\\sl0\\par\n}\n";
+  string gameInfoCaption = "";
+>>>>>>> 32c0bb87dbfa276b42cad6db92606a641d470f7d
   int gameInfoBackgroundColor = 0xe1ffff;
   int gameInfoLeft = -1;
   int gameInfoTop = -1;
   int gameInfoWidth = 600;
   int gameInfoHeight = 400;
-  bool gameInfoEmbedGameWindow = -1;
+  bool gameInfoEmbedGameWindow = 0;
   bool gameInfoShowBorder = -1;
   bool gameInfoAllowResize = -1;
   bool gameInfoStayOnTop = 0;

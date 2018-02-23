@@ -31,8 +31,8 @@
 namespace enigma_user {
 enum //object names
 {
-  obj_60 = 0,
-  obj_61 = 1,
+  obj_0 = 0,
+  obj_1 = 1,
 };
 }
 namespace enigma { size_t object_idmax = 2; }
@@ -40,8 +40,8 @@ namespace enigma { size_t object_idmax = 2; }
 namespace enigma_user {
 string object_get_name(int i) {
  switch (i) {
-    case 0: return "obj_60"; break;
-    case 1: return "obj_61"; break;
+    case 0: return "obj_0"; break;
+    case 1: return "obj_1"; break;
  default: return "<undefined>";}};}
 
 namespace enigma_user {

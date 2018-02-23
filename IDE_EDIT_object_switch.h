@@ -33,10 +33,10 @@
 #endif
 
 case 0:
-    NEW_OBJ_PREFIX new enigma::OBJ_obj_60(x,y,idn);
+    NEW_OBJ_PREFIX new enigma::OBJ_obj_0(x,y,idn);
   break;
 case 1:
-    NEW_OBJ_PREFIX new enigma::OBJ_obj_61(x,y,idn);
+    NEW_OBJ_PREFIX new enigma::OBJ_obj_1(x,y,idn);
   break;
 
 

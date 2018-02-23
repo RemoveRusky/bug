@@ -34,7 +34,7 @@ struct log_xor_helper { bool value; };
 template<typename LEFT> log_xor_helper operator ||(const LEFT &left, const log_xor_helper &xorh) { log_xor_helper nxor; nxor.value = (bool)left; return nxor; }
 template<typename RIGHT> bool operator ||(const log_xor_helper &xorh, const RIGHT &right) { return xorh.value ^ (bool)right; }
 
-variant enigma::OBJ_obj_60::myevent_step()
+variant enigma::OBJ_obj_0::myevent_step()
 {
   { if (timeline_running && timeline_speed!=0) advance_curr_timeline(); }
 
@@ -51,16 +51,16 @@ variant enigma::OBJ_obj_60::myevent_step()
   
   return 0;
 }
-inline bool enigma::OBJ_obj_60::myevent_draw_subcheck()
+inline bool enigma::OBJ_obj_0::myevent_draw_subcheck()
 {
   return (visible);
 
 }
-bool enigma::OBJ_obj_60::can_cast(int obj) const {
+bool enigma::OBJ_obj_0::can_cast(int obj) const {
   return false;
 }
 
-variant enigma::OBJ_obj_61::myevent_create()
+variant enigma::OBJ_obj_1::myevent_create()
 {
   enigma::temp_event_scope ENIGMA_PUSH_ITERATOR_AND_VALIDATE(this);
   
@@ -71,12 +71,12 @@ variant enigma::OBJ_obj_61::myevent_create()
   
   return 0;
 }
-inline bool enigma::OBJ_obj_61::myevent_draw_subcheck()
+inline bool enigma::OBJ_obj_1::myevent_draw_subcheck()
 {
   return (visible);
 
 }
-bool enigma::OBJ_obj_61::can_cast(int obj) const {
+bool enigma::OBJ_obj_1::can_cast(int obj) const {
   return false;
 }
 

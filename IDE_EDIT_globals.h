@@ -49,7 +49,7 @@ namespace enigma {
   bool freezeOnLoseFocus = 0;
   bool treatCloseAsEscape = -1;
   bool isFullScreen = 0;
-  string gameInfoText = "{\\rtf1\\ansi\n{\\fonttbl\\f0\\fnil Monospaced;\\f1\\fnil DejaVu Sans;}\n\n\\li0\\ri0\\fi0\\ql\\f0\\fs24\\i0\\b0\\ul0\\sl-240\\cf0\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\f1\\fs32\\par\n\\par\n\\par\n\\fs24\\par\n\\fs32\\par\n\\fs24\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\sl0\\par\n\\par\n\\par\n\\par\n\\par\n\\fs24\\i0\\b0\\ul0\\sl0\\par\n}\n";
+  string gameInfoText = "{\\rtf1\\ansi\n{\\fonttbl\\f0\\fnil Monospaced;\\f1\\fnil DejaVu Sans;}\n\n\\li0\\ri0\\fi0\\ql\\f0\\fs24\\i0\\b0\\ul0\\sl-240\\cf0\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\f1\\fs32\\par\n\\par\n\\par\n\\fs24\\par\n\\fs32\\par\n\\fs24\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\sl0\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\par\n\\fs24\\i0\\b0\\ul0\\sl0\\par\n}\n";
   string gameInfoCaption = "";
   int gameInfoBackgroundColor = 0xe1ffff;
   int gameInfoLeft = -1;
@@ -69,7 +69,7 @@ namespace enigma
 {
   struct ENIGMA_global_structure: object_locals
   {
-    var o;
+    int o;
     ENIGMA_global_structure(const int _x, const int _y): object_locals(_x,_y) {}
   };
   object_basic *ENIGMA_global_instance = new ENIGMA_global_structure(global,global);

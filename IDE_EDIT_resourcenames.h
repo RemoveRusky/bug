@@ -31,17 +31,17 @@
 namespace enigma_user {
 enum //object names
 {
-  obj_0 = 60,
-  obj_1 = 61,
+  obj_0 = 0,
+  obj_1 = 1,
 };
 }
-namespace enigma { size_t object_idmax = 62; }
+namespace enigma { size_t object_idmax = 2; }
 
 namespace enigma_user {
 string object_get_name(int i) {
  switch (i) {
-    case 60: return "obj_0"; break;
-    case 61: return "obj_1"; break;
+    case 0: return "obj_0"; break;
+    case 1: return "obj_1"; break;
  default: return "<undefined>";}};}
 
 namespace enigma_user {
@@ -137,7 +137,7 @@ string shader_get_name(int i) {
 namespace enigma_user {
 enum //room names
 {
-  rm_7 = 6,
+  rm_7 = 0,
 };}
-namespace enigma { size_t room_idmax = 7; }
+namespace enigma { size_t room_idmax = 1; }
 

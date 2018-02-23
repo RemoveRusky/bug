@@ -32,10 +32,10 @@
 #  define NEW_OBJ_PREFIX
 #endif
 
-case 60:
+case 0:
     NEW_OBJ_PREFIX new enigma::OBJ_obj_0(x,y,idn);
   break;
-case 61:
+case 1:
     NEW_OBJ_PREFIX new enigma::OBJ_obj_1(x,y,idn);
   break;
 

@@ -57,7 +57,6 @@ namespace enigma
       case obj_1: return ((OBJ_obj_1*)inst)->o;
       case global: return ((ENIGMA_global_structure*)ENIGMA_global_instance)->o;
     }
-    dummy_0 = var();
     return dummy_0;
   }
 } // namespace enigma

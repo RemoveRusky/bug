@@ -41,7 +41,7 @@ namespace enigma
   int event_system_initialize()
   {
     events = new event_iter[8]; // Allocated here; not really meant to change.
-    objects = new objectid_base[62]; // Allocated here; not really meant to change.
+    objects = new objectid_base[2]; // Allocated here; not really meant to change.
     event_beforecollisionautomaticcollisionhandling = events + 0;  event_beforecollisionautomaticcollisionhandling->name = "Before collision automatic collision handling";
     event_beginstep = events + 1;  event_beginstep->name = "Begin Step";
     event_create = events + 2;  event_create->name = "Create";

@@ -33,6 +33,7 @@
 #endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 case 60:
     NEW_OBJ_PREFIX new enigma::OBJ_obj_0(x,y,idn);
   break;
@@ -43,6 +44,12 @@ case 0:
   break;
 case 1:
 >>>>>>> 32c0bb8... working
+=======
+case 0:
+    NEW_OBJ_PREFIX new enigma::OBJ_obj_0(x,y,idn);
+  break;
+case 1:
+>>>>>>> 32c0bb87dbfa276b42cad6db92606a641d470f7d
     NEW_OBJ_PREFIX new enigma::OBJ_obj_1(x,y,idn);
   break;
 

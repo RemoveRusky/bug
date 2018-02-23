@@ -30,15 +30,15 @@
 
 namespace enigma {
   int room_loadtimecount = 1;
-  tile tiles_6[] = {
+  tile tiles_0[] = {
   };
-  inst insts_6[] = {
-{100510,60,112,96},  };
+  inst insts_0[] = {
+{100001,0,112,96},  };
   roomstruct grd_rooms[1] = {
-    //Room 6
-    { 6, 0, "rm_7",  "",
-      0xffcc66, true, roomcreate6,
-      roomprecreate6,
+    //Room 0
+    { 0, 0, "rm_7",  "",
+      0xffcc66, true, roomcreate0,
+      roomprecreate0,
       640, 480, 30,  false,  false, {
       { false,   0, 0, 640, 480,   0, 0, 640, 480,   -1,   32, 32,   -1, -1 },
       { false,   0, 0, 640, 480,   0, 0, 640, 480,   -1,   32, 32,   -1, -1 },
@@ -56,11 +56,11 @@ namespace enigma {
       { false,   false,   -1,   0,   0,   0,   0,   true,   true,   false,   1,   16777215 },
       { false,   false,   -1,   0,   0,   0,   0,   true,   true,   false,   1,   16777215 },
       { false,   false,   -1,   0,   0,   0,   0,   true,   true,   false,   1,   16777215 },
-      },      1, insts_6      ,0, tiles_6    },
+      },      1, insts_0      ,0, tiles_0    },
   };
   
-  int maxid = 100510 + 1;
+  int maxid = 100001 + 1;
   int maxtileid = 10000000 + 1;
 } // Namespace enigma
-int room_first = 6;
-int room_last = 6;
+int room_first = 0;
+int room_last = 0;
